@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .game-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <h2>Simple Guessing Game</h2>
+
+        <!-- Radio buttons for choosing an option -->
+        <label>
+            <input type="radio" name="option" id="over35" value="over35"> Over 35
+        </label>
+        <label>
+            <input type="radio" name="option" id="below35" value="below35"> Below 35
+        </label><br><br>
+        
+        <!-- Textbox to display the random number -->
+        <label for="randomNumber">Random Number:</label>
+        <input type="text" id="randomNumber" readonly><br><br>
+        
+        <!-- Button to run the game -->
+        <button onclick="runGame()">RUN</button>
+    </div>
+
+    <script>
+        function runGame() {
+            // Generate a random number between 0 and 70
+            const randomNumber = Math.floor(Math.random() * 71);
+            document.getElementById("randomNumber").value = randomNumber; // Display the random number
+
+            // Check which radio button is selected
+            const over35 = document.getElementById("over35").checked;
+            const below35 = document.getElementById("below35").checked;
+
+            // Check if the user has selected an option
+            if (!over35 && !below35) {
+                alert("Please choose an option (Over 35 or Below 35) before running the game.");
+                return;
+            }
+
+            // Check for tie condition
+            if (randomNumber === 35) {
+                alert("It was a tie: please try again");
+                return;
+            }
+
+            // Determine win/lose conditions based on user selection and random number
+            if (over35 && randomNumber > 35) {
+                alert("WIN: good bet.");
+            } else if (below35 && randomNumber < 35) {
+                alert("WIN: good bet.");
+            } else {
+                alert("Lose: wrong bet.");
+            }
+        }
+    </script>
+
+</body>
+</html>
