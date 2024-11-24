@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover technology trends in [Your Country] for 2024 with interactive elements, graphics, and more.">
+    <title>Technology Trends in [Your Country]</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            padding: 5px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home Section */
+        .home {
+            text-align: center;
+            padding: 50px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            margin-bottom: 20px;
+        }
+
+        .home button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ffd700;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .home button:hover {
+            background-color: white;
+        }
+
+        /* Trends Section */
+        .trends {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1000px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+        }
+
+        .trends h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .trend {
+            margin-bottom: 30px;
+        }
+
+        .trend img {
+            float: left;
+            margin-right: 15px;
+            max-width: 150px;
+            border-radius: 8px;
+        }
+
+        .trend h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .trend p {
+            text-align: justify;
+        }
+
+        /* Clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 20px;
+            background-color: #f3f3f3;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>TechTrends [Your Country]</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trends">Trends</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>Welcome to Technology Trends 2024</h1>
+        <p>Explore the advancements shaping [Your Country] in AI, IoT, and more!</p>
+        <button onclick="alert('Thank you for exploring Technology Trends!')">Discover Now</button>
+    </section>
+
+    <!-- Technology Trends Section -->
+    <section id="trends" class="trends">
+        <h2>Key Technology Trends in [Your Country]</h2>
+
+        <div class="trend clearfix">
+            <img src="https://via.placeholder.com/150" alt="AI image">
+            <h3>Artificial Intelligence (AI)</h3>
+            <p>AI is transforming industries like healthcare, finance, and education in [Your Country]. Innovations include AI-powered diagnostic tools and predictive analytics for business growth.</p>
+        </div>
+
+        <div class="trend clearfix">
+            <img src="https://via.placeholder.com/150" alt="IoT image">
+            <h3>Internet of Things (IoT)</h3>
+            <p>Smart devices are connecting homes, businesses, and cities. IoT applications in agriculture and manufacturing are driving efficiency and sustainability across [Your Country].</p>
+        </div>
+
+        <div class="trend clearfix">
+            <img src="https://via.placeholder.com/150" alt="5G image">
+            <h3>5G Technology</h3>
+            <p>The rollout of 5G networks is enabling faster communication, boosting innovations in autonomous vehicles, and improving mobile experiences for millions.</p>
+        </div>
+
+        <div class="trend clearfix">
+            <img src="https://via.placeholder.com/150" alt="Blockchain image">
+            <h3>Blockchain</h3>
+            <p>Blockchain is revolutionizing financial transactions and data security. Cryptocurrencies and secure record-keeping are gaining popularity in [Your Country].</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechTrends. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
